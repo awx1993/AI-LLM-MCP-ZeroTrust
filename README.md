@@ -80,9 +80,7 @@ Tool shim (Python example):
 
 
 <img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/3a620d5f-32f3-4b96-91d1-fee8d5a95f97" />
-<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/6cdef870-9d94-47bd-adc4-39a6935dd77a" />
-<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/6637343a-f656-4efb-bcf5-6ac7678540eb" />
-<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/15a86407-fb17-4dd1-bcdb-b70aa4fa0bb4" />
+
 
 6. Compliance & Zero Trust Alignment
 
