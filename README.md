@@ -38,6 +38,9 @@ Pod spec with restrictive profile:
 <img width="269" height="257" alt="image" src="https://github.com/user-attachments/assets/53c8cd72-74fa-4d09-bcf1-82d8beccb967" />
 
 
+OPA rule (deny dangerous commands):
+
+<img width="199" height="138" alt="image" src="https://github.com/user-attachments/assets/0d10f0a0-8831-4e0a-8d24-1f35d053c379" />
 
 
 
