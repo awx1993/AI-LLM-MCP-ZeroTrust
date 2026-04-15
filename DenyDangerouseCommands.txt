@@ -1,0 +1,14 @@
+package kubernetes.admission
+
+deny[msg] {
+    input.request.kind.kind == "Pod"
+    container := input.request.object.spec.containers[_]
+    contains(container.image, "untrusted")
+    msg = sprintf("Image %v not allowed", [container.image])
+}
+
+# Enforce no hostPID, hostNetwork, hostIPC
+deny[msg] {
+    input.request.object.spec.hostPID == true
+    msg = "hostPID is forbidden for AI workloads"
+}
