@@ -22,3 +22,5 @@ Key design principle: The AI never holds long‑lived credentials. It receives p
 <img width="237" height="81" alt="image" src="https://github.com/user-attachments/assets/95dde294-2457-4c60-8aea-ecd6a6bda63f" />
 
          
+   Run command:
+   <img width="218" height="113" alt="image" src="https://github.com/user-attachments/assets/94a670ed-d128-406d-b193-5b77659003a4" />
