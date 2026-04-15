@@ -26,7 +26,24 @@ Key design principle: The AI never holds long‑lived credentials. It receives p
 
  <img width="218" height="113" alt="image" src="https://github.com/user-attachments/assets/94a670ed-d128-406d-b193-5b77659003a4" />
 
-seccomp example (allowlist syscalls):
+seccomp example (allowlist syscalls): json
 
 <img width="323" height="86" alt="image" src="https://github.com/user-attachments/assets/60bb95ea-f32c-40c3-8ed3-dbeab8c0f607" />
+
+
+3.2 Kubernetes (Pod Security Standards + OPA)
+
+Pod spec with restrictive profile:
+
+<img width="269" height="257" alt="image" src="https://github.com/user-attachments/assets/53c8cd72-74fa-4d09-bcf1-82d8beccb967" />
+
+
+
+
+
+
+
+
+
+
 
