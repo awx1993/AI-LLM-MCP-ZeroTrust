@@ -1,0 +1,9 @@
+apiVersion: node.k8s.io/v1
+kind: RuntimeClass
+metadata:
+  name: kata-ai
+handler: kata
+---
+# Pod uses kata
+spec:
+  runtimeClassName: kata-ai
