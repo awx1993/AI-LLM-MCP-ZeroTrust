@@ -14,3 +14,13 @@ Key design principle: The AI never holds long‑lived credentials. It receives p
 2. Security Controls Mapped to MITRE ATT&CK (Relevant TTPs)
 
    <img width="332" height="272" alt="image" src="https://github.com/user-attachments/assets/8139d781-b40c-488c-8f29-93e4953de22e" />
+
+3. Implementation Examples
+3.1 Docker (Rootless + seccomp + AppArmor)
+                         Dockerfile snippet:Dockerfile
+              FROM alpine:3.18
+RUN adduser -D -u 10001 aiuser && \
+    rm -rf /var/cache/apk/*
+USER aiuser
+COPY --chown=aiuser:aiuser --chmod=750 ./tool_shim.sh /app/tool_shim.sh
+ENTRYPOINT ["/app/tool_shim.sh"]
