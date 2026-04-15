@@ -1,0 +1,6 @@
+path "secret/data/db-readonly" {
+  capabilities = ["read"]
+}
+path "secret/data/credentials/*" {
+  capabilities = []
+}

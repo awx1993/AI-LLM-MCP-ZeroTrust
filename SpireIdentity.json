@@ -1,0 +1,6 @@
+{
+  "selector": "docker:label:app:ai-agent",
+  "spiffe_id": "spiffe://corp/ai-agent/session-{uuid}",
+  "ttl": 300,
+  "dns_names": ["ai-agent.internal"]
+}
