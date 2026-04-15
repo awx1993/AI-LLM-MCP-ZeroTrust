@@ -43,8 +43,11 @@ OPA rule (deny dangerous commands):
 <img width="199" height="138" alt="image" src="https://github.com/user-attachments/assets/0d10f0a0-8831-4e0a-8d24-1f35d053c379" />
 
 
+3.3 VM Isolation (Kata Containers + Firecracker)
 
+Kata runtime class:
 
+<img width="98" height="109" alt="image" src="https://github.com/user-attachments/assets/8a4ce661-687f-4106-b9cb-043ed3015dbb" />
 
 
 
