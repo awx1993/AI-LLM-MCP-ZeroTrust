@@ -17,10 +17,7 @@ Key design principle: The AI never holds long‑lived credentials. It receives p
 
 3. Implementation Examples
 3.1 Docker (Rootless + seccomp + AppArmor)
-                         Dockerfile snippet:Dockerfile
-              FROM alpine:3.18
-RUN adduser -D -u 10001 aiuser && \
-    rm -rf /var/cache/apk/*
-USER aiuser
-COPY --chown=aiuser:aiuser --chmod=750 ./tool_shim.sh /app/tool_shim.sh
-ENTRYPOINT ["/app/tool_shim.sh"]
+   Dockerfile snippet:
+         <img width="236" height="83" alt="image" src="https://github.com/user-attachments/assets/496339f0-3f0d-4510-8d99-4a5b2c091e4a" />
+
+         
