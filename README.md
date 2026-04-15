@@ -18,6 +18,7 @@ Key design principle: The AI never holds long‑lived credentials. It receives p
 3. Implementation Examples
 3.1 Docker (Rootless + seccomp + AppArmor)
    Dockerfile snippet:
-         <img width="236" height="83" alt="image" src="https://github.com/user-attachments/assets/496339f0-3f0d-4510-8d99-4a5b2c091e4a" />
+         
+<img width="237" height="81" alt="image" src="https://github.com/user-attachments/assets/95dde294-2457-4c60-8aea-ecd6a6bda63f" />
 
          
