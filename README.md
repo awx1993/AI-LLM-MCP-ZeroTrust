@@ -50,6 +50,35 @@ Kata runtime class:
 <img width="98" height="109" alt="image" src="https://github.com/user-attachments/assets/8a4ce661-687f-4106-b9cb-043ed3015dbb" />
 
 
+Firecracker VM config (jailer):
+
+<img width="151" height="53" alt="image" src="https://github.com/user-attachments/assets/357dd40a-16da-4eab-b527-e177fad2d750" />
+
+VM config disables virtio-fs for host passthrough, uses virtio-block (read-only for data).
+
+
+
+4. Sample IAM Policies and Enforcement Rules
+   
+4.1 SPIFFE Identity & Vault Policy4.1 SPIFFE Identity & Vault Policy
+SPIRE registration entry:
+
+<img width="182" height="80" alt="image" src="https://github.com/user-attachments/assets/5475469b-91f2-46c2-b455-628926e0c767" />
+
+
+Vault policy (per‑identity, not per‑AI code):
+
+<img width="119" height="80" alt="image" src="https://github.com/user-attachments/assets/d73c20d8-5f7d-42ec-8795-6fe5a0e5c580" />
+
+4.2 Allowlist for AI‑invoked commands
+Tool shim (Python example):
+
+<img width="275" height="147" alt="image" src="https://github.com/user-attachments/assets/358ab864-d0a9-4301-8832-2993040c22c8" />
+
+
+
+
+
 
 
 
