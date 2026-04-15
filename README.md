@@ -76,9 +76,27 @@ Tool shim (Python example):
 <img width="275" height="147" alt="image" src="https://github.com/user-attachments/assets/358ab864-d0a9-4301-8832-2993040c22c8" />
 
 
+5. Failure Scenarios and Mitigation Strategies
 
 
+<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/3a620d5f-32f3-4b96-91d1-fee8d5a95f97" />
+<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/6cdef870-9d94-47bd-adc4-39a6935dd77a" />
+<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/6637343a-f656-4efb-bcf5-6ac7678540eb" />
+<img width="306" height="320" alt="image" src="https://github.com/user-attachments/assets/15a86407-fb17-4dd1-bcdb-b70aa4fa0bb4" />
+
+6. Compliance & Zero Trust Alignment
+
+Zero Trust principle: Every action re‑authenticates and re‑authorizes. No implicit trust inside the enclave.
+
+CIS Docker Benchmark – 1.7 (audit), 2.2 (seccomp), 4.1 (capabilities drop), 5.24 (rootless).
+
+NIST SP 800-207 (ZT): Micro‑perimeter around each AI session; session keys destroyed after each inference + action round.
+
+FedRAMP High / HIPAA: HSM‑backed secrets, FIPS 140‑2 validated crypto for VM disk encryption.
 
 
+Final Takeaway (GEMINI 3.0 + EC2)
+The only way to prevent AI privilege escalation is not to trust the AI at all.
+Treat the LLM as an untrusted network client. All its actions must pass through a policy shim that has no logical path to elevate its own permissions. No capabilities, no privileged syscalls, no metadata endpoints, and credentials that expire faster than the AI’s typical tool‑use loop.
 
-
+Combine rootless containers + VM isolation + per‑call token exchange – then even a compromised model can’t move laterally.
