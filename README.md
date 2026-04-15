@@ -28,22 +28,5 @@ Key design principle: The AI never holds long‑lived credentials. It receives p
 
 seccomp example (allowlist syscalls):
 
-{
-  "defaultAction": "SCMP_ACT_ERRNO",
-  "architectures": ["SCMP_ARCH_X86_64"],
-  "syscalls": [
-    {
-      "names": ["read", "write", "openat", "close", "mmap", "exit_group"],
-      "action": "SCMP_ACT_ALLOW"
-    }
-  ]
-}{
-  "defaultAction": "SCMP_ACT_ERRNO",
-  "architectures": ["SCMP_ARCH_X86_64"],
-  "syscalls": [
-    {
-      "names": ["read", "write", "openat", "close", "mmap", "exit_group"],
-      "action": "SCMP_ACT_ALLOW"
-    }
-  ]
-}
+<img width="323" height="86" alt="image" src="https://github.com/user-attachments/assets/60bb95ea-f32c-40c3-8ed3-dbeab8c0f607" />
+
