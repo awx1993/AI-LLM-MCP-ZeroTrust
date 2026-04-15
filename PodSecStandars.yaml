@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    container.seccomp.security.alpha.kubernetes.io/ai: "localhost/ai-profile.json"
+spec:
+  serviceAccountName: ai-nonprivileged-sa   # no cluster roles
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 10001
+    seccompProfile:
+      type: Localhost
+      localhostProfile: ai-profile.json
+  containers:
+  - name: llm-agent
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop: ["ALL"]
+    volumeMounts:
+    - name: tmp
+      mountPath: /tmp
+    - name: policy-engine
+      mountPath: /etc/policy
+  - name: envoy-sidecar   # policy enforcement proxy
+    image: envoyproxy/envoy:latest
